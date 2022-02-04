@@ -31,9 +31,114 @@ p {
 a:hover {
     text-decoration: none;
 }
+
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    left: -40px;
+    top: 35%;
+    z-index: 9999;
+    display: flex;
+    transition: all ease .5s;
+}
+.design-icon{
+    font-size: 25px;
+    margin-left: 0px;
+    cursor: pointer;
+    background-color: #FFFF00;
+    color: black;
+    padding: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: #ffff004d 0px 22px 70px 4px;
+}
+
+.moveRight{
+  margin-left: 8px
+}
+
+.design-icon-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.disabled {
+    color: rgb(49, 49, 49) !important;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: transparent !important;
+}
+
+.side-bar-list {
+    list-style-type: none;
+    background-color: #FFFF00;
+    padding: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: #ffff004d 0px 22px 70px 4px;
+
+}
+
+.sidebar ul li a {
+    font-size: 2rem;
+    color: black;
+   font-weight: 900;
+   font-family: 'Lemon/Milk light Regular';
+}
+
+
+.sidebar ul li{
+    transition: all ease-in-out 0.3s;
+}
+.sidebar ul li:hover {
+    transform: scale(1.5);
+}
 .section-spacer{
  height: 120px;
 }
+
+/*Sidebar*/
+    .mobile-sidebar-container{
+        position: fixed;
+        top: 250px;
+        left: 0px;
+        z-index: 22;
+        display: flex;
+        padding: 8px;
+        transition: ease-in-out 0.5s all;
+    }
+     .moveRight {
+         left: -10px;
+     }
+
+    .list-wrapper > ul {
+        list-style: none;
+    }
+    .list-wrapper > ul > li > a {
+        color: white;
+        font-size: 28px;
+        padding: 10px;
+        font-family: var(--teko-font);
+    }
+    .desing-icon i{
+        background-color: var(--site-black);
+        font-size: 32px;
+        padding: 8px;
+        color: white;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin-top:15px;
+    }
+
+    .list-wrapper {
+        padding-top: 15px;
+        background-color: var(--site-black);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+    }
 /* ANIMATIONS AND FLAUTINGS */
 /* FLOAT
 ---------- */
@@ -112,6 +217,24 @@ a:hover {
 	}
 }
 
+.floating-left-right-mob {
+	overflow: hidden;
+	transform: translatex(0px);
+	animation: float4 6s ease-in-out infinite;
+}
+
+@keyframes float4 {
+	0% {
+		transform: translatey(20px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(20px);
+	}
+}
+
 /* rotate float */
 /* float 3 */
 .rotating-ball {
@@ -132,19 +255,19 @@ a:hover {
 	}
 }
 
-    /* HOME PAGE DESIGN 
+    /* HOME PAGE DESIGN
 --------------------------*/
     .homepage-hero-wrapper{
         background-position: center;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        width: 95%;
+        width: 100%;
         align-items: center;
         justify-items: center;
-        height: 100vh;
         position: relative;
         z-index: 999;
         transition: ease-in-out .5s;
+        padding-bottom: 150px;
     }
     .homepage-middle-title{
         display: flex;
@@ -157,7 +280,7 @@ a:hover {
         margin-top: 200px;
         text-align: center;
     }
-    
+
     .can-img{
         position: absolute;
         bottom: 0;
@@ -181,37 +304,40 @@ a:hover {
       font-family: 'Lemon/Milk light Regular';
       z-index: 0;
     }
-    
+
+    .homepage-hero-inner{
+        overflow: hidden;
+    }
+
     .homepage-third-title{
         position: absolute;
         right: 0;
         bottom: 50%;
         margin-bottom: -210px;
-        margin-right: -90px;
         color:#EE1E53;
         font-size: 15rem;
         font-family: 'Lemon/Milk light Regular';
         z-index: 0;
       }
-    
+
     .second-title-wrapper{
         z-index: inherit;
     }
-    
-    /* HOME PAGE FLOATING IMAGES ABSLUTE CLASSES STYLES 
+
+    /* HOME PAGE FLOATING IMAGES ABSLUTE CLASSES STYLES
     ----------------------------------------------------*/
     .homepage-banner-labtop{
         position: absolute;
-        top: 0;  
+        top: 0;
         margin-top: 112px;
     }
-    
+
     .homepage-banner-labtopscreen {
         position: absolute;
-        top: 0;  
-        margin-top: 112px;  
+        top: 0;
+        margin-top: 112px;
     }
-    
+
     /* .homepage-hero-wrapper:hover {
         transform: scale(0.5) translate(-1%);
     } */
@@ -222,7 +348,7 @@ a:hover {
         margin-left: 500px;
         margin-top: 50px;
     }
-    
+
     .img-banana{
         position: absolute;
         bottom: 0;
@@ -239,8 +365,9 @@ a:hover {
       align-items: center;
       justify-content: center;
       padding-top: 100PX;
+      z-index: 0;
     }
-    
+
     .homepage-showcase-title-wrapper{
         display: grid;
         justify-content: center;
@@ -253,7 +380,7 @@ a:hover {
         font-size: 3rem;
         text-align: center;
     }
-    
+
     .homepage-showcase-title-wrapper > h2:nth-of-type(1){
         text-align: center;
         font-family: 'Akira Expanded', sans-serif;
@@ -262,28 +389,28 @@ a:hover {
       -webkit-text-stroke-color: #6CFF6C;
       font-size: 4rem;
     }
-    
+
     .homepage-showcase-image-wrapper{
         display: grid;
         grid-template-columns: repeat(9, 1fr);
         justify-items: center;
         align-items: center;
     }
-    
+
     .icon-wrapper {
         padding: auto 50px;
     }
-    
+
     .homepage-desc-wrapper{
         max-width: 850px;
         margin: auto;
         padding-bottom: 50px;
     }
-    
+
     .homepage-desc-wrapper > p {
         text-align: center;
     }
-    
+
     .showcase-form{
         text-align: center;
         max-width: 487px;
@@ -292,11 +419,11 @@ a:hover {
         display: grid;
         grid-template-columns: 3fr 1fr;
         }
-    
+
     .num-field{
         height: 100%;
         background-color: transparent;
-        border: 2px solid #07BDF0; 
+        border: 2px solid #07BDF0;
         color: white;
         padding-left: 15px;
         font-family: 'Syne', sans-serif;
@@ -313,21 +440,21 @@ a:hover {
 
     .num-field-red{
         background-color: transparent;
-        border: 2px solid #EE1E53; 
+        border: 2px solid #EE1E53;
         color: white;
         padding-left: 15px;
         font-family: 'Syne', sans-serif;
         outline: 0;
     }
-    
+
     /* .num-field:focus{
         border: none;
-        outline: 2px solid #07BDF0; 
+        outline: 2px solid #07BDF0;
         height: 56px !important;
         width: 75%;
     } */
-  
-    
+
+
     /* HOMEPAGE SEO SECTION
     ------------------------ */
     .homepage-seo-wrapper{
@@ -335,16 +462,16 @@ a:hover {
         grid-template-columns: 50% 50%;
         justify-items: center;
         align-items: center;
-        
+
         max-width: 90%;
         margin: auto;
     }
-    
+
     .homepage-seo-image-wrapper {
         position: relative;
     }
 
-    
+
     .homepage-seo-content-wrapper > h2:nth-of-type(1){
         color: #07BDF0;
         font-family: 'syne', sans-serif;
@@ -353,7 +480,7 @@ a:hover {
         text-transform: uppercase;
         line-height: 0.9
     }
-    
+
     .homepage-seo-content-wrapper > h2:nth-of-type(2){
         font-family: 'Akira Expanded', sans-serif;
         color: #0F0F0F;
@@ -361,19 +488,19 @@ a:hover {
         -webkit-text-stroke-color: #fff;
         font-size: 4.5rem;
     }
-    
+
     .homepage-seo-content-wrapper > h2:nth-of-type(3){
         font-family: 'syne';
         color: #EE1E53;
         font-size: 20px;
         text-transform: capitalize;
     }
-    
+
     .homepage-seo-content-wrapper > p:nth-of-type(1){
         font-family: 'Barlow';
-        
+
     }
-    
+
     .learn-more-btn{
         width: 150px;
         height: 150px;
@@ -383,17 +510,17 @@ a:hover {
        font-size: 20px;
        font-weight: bold;
     }
- 
-    
-   
+
+
+
        .homepage-seo-image-wrapper > img:nth-of-type(2){
         position: absolute;
         top: 50%;
         left: 0;
         margin-top: -400px;
     }
-    
-    
+
+
     /* HOMEPAGE DESIGN SECTION
     ------------------------ */
     .homepage-design-wrapper{
@@ -403,14 +530,14 @@ a:hover {
         margin:auto;
         align-items: center;
     }
-    
- 
-    
+
+
+
     .homepage-design-content-wrapper > h2:nth-of-type(1){
         font-family: 'syne', sans-serif;
         font-size: 32px;
     }
-    
+
     .homepage-design-content-wrapper > h2:nth-of-type(2){
         font-family: 'syne', sans-serif;
         text-transform: uppercase;
@@ -418,19 +545,19 @@ a:hover {
         font-size: 4rem;
         font-family: 700;
     }
-    
+
     .homepage-design-content-wrapper > h2:nth-of-type(3){
         font-family: 'syne' sans-serif;
         color: #EE1E53;
         font-size: 20px;
         text-transform: capitalize;
     }
-    
+
     .homepage-design-content-wrapper > p:nth-of-type(1){
         font-family: 'Barlow';
-       
+
     }
-    
+
     .design-learn-more-btn{
         width: 150px;
         height: 150px;
@@ -440,19 +567,20 @@ a:hover {
        font-size: 20px;
        font-weight: bold;
     }
-    
+
     .homepage-design-image-wrapper {
         position: relative;
+        overflow: hidden;
     }
     .mobile-rocket {
-       max-width: 90%;
+       max-width: 65%;
     }
-    
+
     .bell-seo{
         position: absolute;
         right: 0;
     }
-    /* HOMEPAGE SECTION 3 
+    /* HOMEPAGE SECTION 3
     ----------------------*/
     .homepage-sec3-wrapper{
         display: grid;
@@ -463,17 +591,17 @@ a:hover {
         align-items: center;
         grid-gap: 50px;
     }
-    
+
     /* .homepage-sec3-content-wrapper{
-        
+
     } */
-    
+
     .homepage-sec3-content-wrapper > h2:nth-of-type(1){
         color: #EE1E53;
         font-family: 'Akira Expanded', sans-serif;
         font-size: 55px;
     }
-    
+
     .homepage-sec3-content-wrapper > h2:nth-of-type(2){
         font-family: 'Akira Expanded', sans-serif;
         color: #0E0E0F;
@@ -481,19 +609,19 @@ a:hover {
         -webkit-text-stroke-color: #fff;
         font-size: 4rem;
     }
-    
+
     .homepage-sec3-content-wrapper > h2:nth-of-type(3){
         font-family: 'syne';
         color: #EE1E53;
         font-size: 25px;
         text-transform: capitalize;
     }
-    
+
     .homepage-sec3-content-wrapper > p:nth-of-type(1){
         font-family: 'Barlow';
 
     }
-    
+
     .sec3-learn-more-btn{
         width: 150px;
         height: 85px;
@@ -503,11 +631,11 @@ a:hover {
        font-size: 20px;
        font-weight: bold;
       }
-    
+
       .homepage-sec3-image-wrapper{
           position: relative;
     }
-    
+
      .homepage-sec3-image-wrapper > img:nth-of-type(1){
          max-width: 100%;
        }
@@ -517,7 +645,7 @@ a:hover {
            bottom: 0;
          }
 
-    
+
     /* HOMEPAGE SECTION 4
     ------------------------ */
     .homepage-sec4-wrapper{
@@ -528,18 +656,18 @@ a:hover {
         align-items: center;
         justify-content: center;
         padding-top: 90px;
-        padding-bottom: 185px;  
+        padding-bottom: 185px;
     }
-    
+
     .homepage-sec4-content-wrapper{
     }
-    
+
     .homepage-sec4-content-wrapper > h2:nth-of-type(1){
         font-family: 'syne', sans-serif;
         font-size: 32px;
         color: #FFFF00
     }
-    
+
     .homepage-sec4-content-wrapper > h2:nth-of-type(2){
         font-family: 'Akira Expanded', sans-serif;
         color: black;
@@ -547,7 +675,7 @@ a:hover {
         -webkit-text-stroke-color: #fff;
         font-size: 4rem;
     }
-    
+
     .homepage-sec4-content-wrapper > h2:nth-of-type(3){
         font-family: 'syne' sans-serif;
         color: #EE1E53;
@@ -555,11 +683,11 @@ a:hover {
         text-transform: capitalize;
         color: #FFFF00;
     }
-    
+
     .homepage-sec4-content-wrapper > p:nth-of-type(1){
         font-family: 'Barlow';
     }
-    
+
     .sec4-learn-more-btn{
         width: 150px;
         height: 85px;
@@ -569,8 +697,8 @@ a:hover {
        font-size: 20px;
        font-weight: bold;
     }
-    
-    
+
+
     .homepage-sec4-image-wrapper {
         position: relative;
     }
@@ -585,12 +713,12 @@ a:hover {
            margin-top: 100px;
         }
     /* WHY US AND TESTIMO SECTION */
-    
+
     .homepage-why-as-testimo-section-wrapper{
       position: relative;
       background-color: #0F0F0F;
     }
-    
+
     .whyus-wrapper{
         max-width: 75%;
         margin: auto;
@@ -602,17 +730,17 @@ a:hover {
         -webkit-text-stroke-width: 1.5px;
         -webkit-text-stroke-color: #fff;
     }
-    
+
     .whyus-wrapper > p{
         font-family: Barlow, sans-serif;
         font-size: 3em;
     }
-    
+
     .whyus-wrapper > p > span {
       color: #6CFF6C;
       text-shadow: #6CFF6C 30px 0 50px;
       font-family: bold;
-    
+
     }
     .moon-bg{
        height: 1000px;
@@ -620,13 +748,13 @@ a:hover {
        right: 0;
        top: 0;
     }
-    
+
     .testimo-outer-wrapper{
         width: 100%;
         /* background: rgb(61, 61, 61);
         opacity: 0.1; */
     }
-    
+
     .testimo-inner-wrapper{
         max-width: 65%;
         margin: 150px auto;
@@ -684,17 +812,17 @@ a:hover {
         right: 0;
         bottom:0;
     }
-    
-    
+
+
     /* HOMEPAGE CONTACT SECTION STYLE
     --------------------------------- */
-    
+
     .contact-section-outer-wrapper{
         background-color: #000;
         position: relative;
         max-height: 1351px;
     }
-    
+
     .contact-section-outer-wrapper > img {
         position: absolute;
         top: 0;
@@ -716,7 +844,7 @@ a:hover {
         margin: auto;
         padding-bottom: 25px;
     }
-    
+
     .form-wrapper {
         z-index: inherit;
     }
@@ -726,7 +854,7 @@ a:hover {
         font-size: 68px;
         text-transform: uppercase;
     }
-    
+
     .form-wrapper > div > h5 {
         color: #EE1E53;
         font-family: syne;
@@ -739,7 +867,7 @@ a:hover {
         display: grid;
         grid-gap: 55px;
     }
-    
+
     .form-wrapper > form > input{
         background-color: transparent;
         color: #fff;
@@ -751,7 +879,7 @@ a:hover {
         border-left: none;
         border-right: none;
     }
-    
+
     .form-wrapper > form > textarea{
         outline: 0;
         border-bottom: 2px white solid;
@@ -763,7 +891,7 @@ a:hover {
         border-left: none;
         border-right: none;
     }
-    
+
     .form-wrapper > form > button{
         font-size: 20px;
         background-color: #fff;
@@ -772,7 +900,7 @@ a:hover {
         border-radius: 5px;
         border: 0;
     }
-    
+
     .contact-details-wrapper > div{
         margin-top: 155px;
     }
@@ -785,13 +913,13 @@ a:hover {
         align-items: center;
         font-size: 35px;
     }
-    
+
     .contact-details-wrapper > div > p > img {
         width: 36px;
     }
-    
+
     /* HOMEPAGE SERVICE SECTION */
-    
+
     .home-page-services-wrapper{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -802,32 +930,32 @@ a:hover {
         max-width: 90%;
         margin: auto;
     }
-    
-    
+
+
     .service-sectoion-title  {
         color: #6CFF6C;
         font-family: 'Syne', sans-serif;
         font-size: 2em;
     }
-    
+
     .service-sectoion-list-wrapper > ul {
         list-style: none;
     }
-    
+
     .service-sectoion-list-wrapper > ul > li{
         padding-top: 15px;
     }
-    
+
     .service-sectoion-list-wrapper > ul > li > a {
         color: #fff;
         font-family: 'Barlow', sans-serif;
         font-size: 2em;
     }
-    
+
     .service-sectoion-list-wrapper > ul > li > a:hover {
         text-decoration: none;
     }
-    
+
     /* HOMEPAE ABOUT SECTION */
     .about-outer{
         width: 100%;
@@ -843,7 +971,7 @@ a:hover {
         margin: auto;
         height: 700px;
     }
-    
+
     .about-outer > img {
         position: absolute;
         right: 0;
@@ -851,22 +979,22 @@ a:hover {
         max-height: 1150px;
         margin-top: -120px;
     }
-    
+
     .homepage-about-section-wrapper h2{
         margin-top: 50px;
         font-family: 'Barlow', sans-serif;
         font-weight: 600;
-        font-size: 4em;   
+        font-size: 4em;
     }
-    
+
     .homepage-about-section-wrapper h4 a{
         color: #fff;
         font-family: 'Barlow', sans-serif;
-        font-size: 1.5em;   
+        font-size: 1.5em;
     }
-    
+
     /* SHARED SECTIONS */
-    
+
     .process-wrapper{
         display: grid;
         grid-template-columns: 85%;
@@ -874,24 +1002,24 @@ a:hover {
         align-items: center;
         margin: 50px auto;
     }
-    
+
     .process-title-wrapper{
         text-align: center;
     }
-    
+
     .process-grid-wrapper{
         display: grid;
         grid-template-columns: 1fr 2.5fr 1fr;
         justify-items: center;
         align-items: center;
     }
-    
+
     .process-grid-inner{
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 50px;
     }
-    
+
     .space-right{
         height: 100px;
     }
@@ -914,7 +1042,7 @@ a:hover {
         text-transform: uppercase;
         line-height: 0.5;
     }
-    
+
     .process-title-wrapper > h3 {
         color: black;
         font-size: 9rem;
@@ -922,8 +1050,8 @@ a:hover {
         -webkit-text-stroke-color: #fff;
         text-transform: uppercase;
     }
-    
-    
+
+
     .process-title-wrapper > h5 {
       color:#EE1E53;
       text-transform: uppercase;
@@ -935,69 +1063,57 @@ a:hover {
         left:0;
         margin-left:500px;
        } */
-    
+
     .inner-content{
         position: relative;
     }
     /* SEO PAGE STYLE
     ------------------------------ */
-    .seo-banner-wrapper-outer{
-        width: 100%;
-        height: 1000px;
-        position: relative;
-        display: flex;
+
+     /* SEO BANNER */
+
+     .seo-page-banner-container {
+      background-image: url('../images/seo page banner image.png');
+      background-position: center;
+      background-size: cover;
+     }
+
+    .seo-inner-wrapper {
+      max-width: 85%;
+      height: 95vh;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
     }
-    
-    .seo-banner-wrapper-inner{
-        max-width: 85%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        height: 620px;
-        justify-items: center;
-        align-items: center;
-        flex: 1;
+
+    .seo-page-banner-inner > h1 {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Syne', sans-serif;
+      text-transform: uppercase;
     }
-    .seo-banner-img{
-     position: absolute;
-     top: 0;
-     left: 0;
+
+    .seo-page-banner-inner > h1 > span:nth-child(1) {
+      font-size: 45px;
+      color: white;
     }
-    .seo-banner-content-wrapper > h4 {
-        font-family: 'Syne', sans-serif;
-        font-size: 2em;
+    .seo-page-banner-inner > h1 > span:nth-child(2) {
+      font-size: 89px;
+      color: #07BDF0;
+      font-weight: 900;
     }
-    
-    .seo-banner-content-wrapper > h2 {
-        color: #EE1E53;
-        font-family: 'Syne', sans-serif;
-        font-weight: 700;
-        font-size: 4.5em;
+    .seo-page-banner-inner > h1 > span:nth-child(3) {
+      font-size: 89px;
+      font-weight: 900;
     }
-    
-    .seo-banner-content-wrapper > h5{
-        font-family: 'Syne', sans-serif;
-        text-transform: uppercase;
-        font-weight: 700;
-        color: #000;
-        background: rgb(164, 21, 57);
-        font-size: 4rem;
-        padding-bottom: 10px;
-        /* padding-right: 600px; */
-        padding-left: 90px;
-        position: absolute;
-        width: 45%;
-        right: 0;
-        z-index: 999;
+
+    .seo-page-banner-inner > p {
+      max-width: 550px;
     }
-    
-    .seo-banner-content-wrapper > p {
-        max-width: 450px;
-        margin-top: 125px;
-    }
-    
     /* SEO PAGE SECTION 2 */
-    
+
     .seo-page-section-2-wrapper{
         max-width: 85%;
         display: grid;
@@ -1007,13 +1123,13 @@ a:hover {
         justify-content: center;
         grid-gap: 100px;
     }
-    
-    
+
+
     .seo-page-sec2-img-wrapper{
         position: relative;
     }
 
-    
+
     .seo-page-sec2-content-wrapper{
         padding-left: 55px;
     }
@@ -1022,25 +1138,25 @@ a:hover {
         text-transform: uppercase;
         font-family: 'Syne', sans-serif;
     }
-    
+
     .seo-page-sec2-content-wrapper > h2 {
         display: flex;
         flex-direction: column;
         color: #07BDF0;
         font-size: 4em;
-        font-family: 'Syne', sans-serif; 
+        font-family: 'Syne', sans-serif;
     }
-    
+
     .seo-page-sec2-content-wrapper > p {
         max-width: 450px;
     }
-   
- 
+
+
     /*  SEO PAGE SECTION 3 OR CTA SECTION STYLE
     -------------------------------------------- */
-    
+
     .seo-page-sec3-wrapper{
-        padding-top: 95px;
+        padding-top: 25px;
         max-width: 85%;
         margin: auto;
         display: grid;
@@ -1048,13 +1164,61 @@ a:hover {
         justify-items: center;
         align-items: center;
     }
-    
+
+       .seo-page-sec3-wrapper img {
+         width: 100%
+       }
+       .icon-box-wrapper {
+         margin-top: 75px;
+         text-align: center;
+       }
+       /* ICON BOX */
+       .icon-box-wrapper > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 25px;
+        justify-content: center;
+        align-items: center;
+        max-width: 55%;
+        margin: auto;
+       }
+
+       .icon-box {
+         border: 1px #EE1E53 solid;
+         height: 420px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+       }
+
+       .icon-box > h3 {
+         margin: 25px 50px;
+         font-weight: 800;
+         color:#EE1E53;
+         font-family: 'Barlow' sans-serif;
+         text-transform: uppercase;
+       }
+       .icon-box > img {
+         width: 87px;
+       }
+
+       .icon-box-middle{
+         height: 500px
+       }
+        .icon-box-wrapper > h2 {
+        font-size: 60px;
+        font-family: 'Syne', sans-serif;
+        text-transform: uppercase;
+        font-family: 900;
+        }
+       /* end of icon box */
     .seo-page-sec3-content-wrapper > h2 {
         font-family: 'Syne', sans-serif;
         font-size: 3em;
         text-transform: uppercase;
     }
-    
+
     .seo-page-sec3-content-wrapper > h3 {
     font-family: 'Akira Expanded', sans-serif;
     color: black;
@@ -1062,14 +1226,14 @@ a:hover {
     -webkit-text-stroke-color: #07BDF0;
     font-size: 4rem;
     }
-    
+
     .sec3-form{
       display: grid;
       grid-template-columns: 3fr 1fr;
       height: 65px;
-      width: 450px;  
+      width: 450px;
     }
-    
+
     .cta-btn-blue {
         padding-bottom: 8px;
         padding-top: 5px;
@@ -1087,41 +1251,96 @@ a:hover {
         font-weight: bold;
         font-family: 'Barlow' sans-serif;
     }
-    
-    /*      SEO PAGE SECTION 4 
+
+    /*      SEO PAGE SECTION 4
     OTHER STYLES COPIED FROM SECTION 2
     ------------------------------------*/
     .seo-page-sec4-wrapper{
         max-width: 85%;
-        margin: auto;
+        margin: 175px auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-items: center;
         align-items: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
     }
     .seo-page-sec4-content-wrapper > h4 {
         font-size: 2em;
         text-transform: uppercase;
         font-family: 'Syne', sans-serif;
     }
-    
+
     .seo-page-sec4-content-wrapper > h2 {
         display: flex;
         flex-direction: column;
         color: #07BDF0;
-        font-size: 4em;
-        font-family: 'Syne', sans-serif; 
+        font-size: 3vw;
+        font-family: 'Syne', sans-serif;
+        text-transform: uppercase;
+        font-weight: 900;
     }
-    
+
     .seo-page-sec4-content-wrapper > p {
         max-width: 450px;
     }
-    
+
     .seo-page-sec4-img-wrapper{
         max-width: 650px;
     }
+/* WEB DESIGN PAGE TOOLS SECTIIN */
 
 
+
+.web-design-page-tools-container > div{
+    max-width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+
+}
+
+.webdesign-page-tools-image-container > img {
+    min-width: 65%;
+}
+
+.webdesign-page-tools-content-container > p {
+    max-width: 450px;
+}
+
+.webdesign-page-tools-content-container > h2 {
+    display: flex;
+    flex-direction: column;
+    color: #EE1E53;
+    font-family: 'Syne', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* webdesign page showcase form */
+.showcase-form-webdesign{
+    width: 750px;
+}
+
+/* call title */
+.webdesign-call-section-title1 {
+    font-family: 'Akira Expanded', sans-serif;
+    color: black;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #EE1E53;
+    font-size: 4rem;
+}
+.webdesign-call-section-title2 {
+    font-family: 'Akira Expanded', sans-serif;
+    color: black;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #EE1E53 !important;
+    font-size: 4rem;
+}
     /* -------------------
 SEO PAGE SECTION 4 OR TOOLS SECTION
 --------------------- */
@@ -1153,7 +1372,7 @@ SEO PAGE SECTION 4 OR TOOLS SECTION
 .seo-tools-content-wrapper > h2 > span:nth-child(3){
     color: #07BDF0;
 }
-    /*---------------- 
+    /*----------------
      WEB DESIGN PAGE
     ---------------- */
 
@@ -1194,16 +1413,62 @@ SEO PAGE SECTION 4 OR TOOLS SECTION
         background: rgb(164, 21, 57);
         color: black;
         font-size: 3em;
-       position:absolute;  
-       bottom: 0;  
-       left: 0; 
-       margin-bottom: -140px; 
+       position:absolute;
+       bottom: 0;
+       left: 0;
+       margin-bottom: -140px;
        margin-left: -200px;
        padding-bottom: 15px;
-       width: 90%;  
+       width: 90%;
        padding-left: 200px;
     }
 
+    /*  promotion-container */
+    .promotion-container {
+        max-width: 65%;
+        margin: auto;
+        text-align: center;
+        color: #fff;
+        background-color:#EE1E53;
+        padding: 75px;
+        position: relative;
+        z-index: 4;
+    }
+
+    .white-line {
+        height: 17px;
+        width: 70%;
+        background-color: #fff;
+        position: absolute;
+        bottom: -7px;
+
+    }
+    .promotion-container > div {
+        max-width: 85%;
+        margin: auto;
+    }
+
+    .promotion-container h3 {
+        display: flex;
+        flex-direction: column;
+    }
+    .promotion-container h3 > span:nth-child(1){
+        font-size: 28px;
+        font-family: 'Syne', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .promotion-container h3 > span:nth-child(2){
+        font-size: 60px;
+        font-family: 'Syne', sans-serif;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+    .promotion-container p {
+        font-family: 'Barlow', sans-serif;
+        max-width: 80%;
+        margin: auto;
+    }
 /* SEO 1 SECTOIN 2 */
 
 .seo1-section2-wrapper {
@@ -1212,18 +1477,19 @@ SEO PAGE SECTION 4 OR TOOLS SECTION
    display: grid;
    grid-template-columns: 1fr 1fr;
    justify-content: center;
-   align-items: center; 
+   align-items: center;
    grid-column-gap: 95px;
    /* border: 1px solid white; */
 }
 
-.seo1-section2-wrapper > div:nth-child(2) > h2 {
+.webdesign-sect2-title {
     display: grid;
     grid-template-columns: 1fr;
     text-transform: uppercase;
-    font-family: 'Syne', sans-serif;
     color: #EE1E53;
-    font-size: 6rem;
+    font-size: 3vw;
+    font-family: 'Syne', sans-serif;
+    font-weight: 900;
 }
 
 .seo1-section2-wrapper > div:nth-child(2) > h2 > span:nth-child(1){
@@ -1231,20 +1497,20 @@ SEO PAGE SECTION 4 OR TOOLS SECTION
     font-size: 32px;
 }
 
-.seo1-page-sec3-content-wrapper > h3 {
+/* .seo1-page-sec3-content-wrapper > h3 {
     font-family: 'Akira Expanded', sans-serif;
     color: black;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: #EE1E53;
     font-size: 4rem;
-    }
+    } */
 
 
     /* LOGO DESIGN PAGE  */
 
     .logo-design-page-banner-wrapper {
         height: auto;
-        text-align: center;     
+        text-align: center;
     }
 
     .logo-design-page-banner-content-wrapper{
@@ -1264,6 +1530,7 @@ SEO PAGE SECTION 4 OR TOOLS SECTION
 
     .logo-design-page-title > span:nth-child(1) {
         font-size: 25px;
+      
     }
 
     .logo-design-page-title > span:nth-child(2) {
@@ -1282,6 +1549,26 @@ SEO PAGE SECTION 4 OR TOOLS SECTION
     }
 
     /* LOGO DESIGN PAGE SECTION 1 */
+
+
+    .promotion-container-logodesign {
+        max-width: 65%;
+        margin: auto;
+        text-align: center;
+        color: #fff;
+        background-color:#FFFF00;
+        padding: 75px;
+        position: relative;
+        z-index: 4;
+    }
+
+    .promotion-container-logodesign  h3 {
+        color: black
+    }
+
+    .promotion-container-logodesign  p {
+        color: black
+    }
 
     .logo-design-section1-wrapper{
         display: grid;
@@ -1330,7 +1617,7 @@ SEO PAGE SECTION 4 OR TOOLS SECTION
       width: 100%;
     }
 
-  
+
 
     .logo-design-page-secion2-content-wrapper > h2:nth-child(1){
        font-size: 68px;
@@ -1365,12 +1652,185 @@ SEO PAGE SECTION 4 OR TOOLS SECTION
            color: black;
            cursor: pointer;
        }
+
+       /* LOGO DESIGN ICON BOX YELLO ICON BOX */
+
+       .icon-box-yellow {
+        border: 1px #FFFF00 solid;
+      }
+
+      .icon-box-yellow > h3 {
+        color:#FFFF00;
+      }
+
+      #logo-design-tools-title > span:nth-child(2) {
+          color:#FFFF00;
+      }
+      #logo-design-tools-title > span:nth-child(3) {
+        color:#FFFF00;
+    }
+
+
+    /* App Development page */
+
+    .app-dev-banner-wrapper {
+        background: #000 url('../images/appdev.jpg');
+        height: 85vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        text-align: center;
+        padding-top: 150px;
+    }
+
+    .app-dev-banner-wrapper > h1 {
+        display: flex;
+        flex-direction: column;
+        color: #6CFF6C;
+        font-size: 5vw;
+        font-family: 'syne', sans-serif;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    .app-dev-banner-wrapper > h1 > span:nth-child(1) {
+        color: #fff;
+        font-size: 26px;
+    }
+    .app-dev-banner-wrapper > h1 > span:nth-child(3) {
+        font-size: 5vw;
+    }
+
+
+    .promotion-container-appdesign {
+        max-width: 65%;
+        margin: auto;
+        text-align: center;
+        color: #fff;
+        background-color:#6CFF6C;
+        padding: 75px;
+        position: relative;
+        z-index: 4;
+    }
+
+    .promotion-container-appdesign  h3 {
+        color: black
+    }
+
+    .promotion-container-appdesign  p {
+        color: black
+    }
+
+    /* app dev section 3 */
+
+    .appdev-section3-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        max-width: 85%;
+        margin: 145px auto;
+    }
+
+    .appdev-section2-content-wrapper > p {
+        max-width: 550px;
+    }
+    .appdev-section2-content-wrapper > h2 {
+        display: flex;
+        flex-direction: column;
+        font-family: 'syne', sans-serif;
+        text-transform: uppercase;
+        font-weight: 900;     
+        color:#6CFF6C; 
+        font-size: 5vw;  
+    } 
+
+    .appdev-section2-content-wrapper > h2 > span:nth-child(1) {
+     color: #fff;
+     font-size: 26px;
+    }
+    .appdev-section2-image-wrapper > img {
+        width: 100%;
+    }
+/* CTA  */
+
+.green-cta > .logo-design-page-secion2-content-wrapper h2:nth-child(2){
+    color: black;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color:#6CFF6C;
+}
+
+.green-cta  input {
+    background-color: transparent;
+    outline: 0;
+    border: 3px #6CFF6C solid;
+    color: white;
+    padding-left: 15px;
+}
+.green-cta  button {
+    border-color: #6CFF6C;
+    background-color: #6CFF6C;
+    color: black;
+    cursor: pointer;
+}
+
+
+ /* Green Icon box */
+
+ .icon-box-green {
+    border: 1px #6CFF6C solid;
+  }
+
+  .icon-box-green > h3 {
+    color:#6CFF6C;
+  }
+
+  /* APP DESIGN SECTION 5  */
+
+  .app-design-section-5-wrapper {
+      max-width: 85%;
+      margin: 120px auto ;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      justify-items: center;
+      grid-gap: 45px;
+  }
+
+  .app-design-section-5-wrapper p {
+      max-width: 550px;
+  }
+  
+  .app-dev-section-5-title {
+      display: flex;
+      flex-direction: column;
+      text-transform: uppercase;
+      font-family: 'syne', sans-serif;
+  }
+
+  .app-dev-section-5-title > span:not(:first-child) {
+    color: #6CFF6C;
+    font-size: 3vw;
+    font-weight: 900;
+}
+
+.app-design-section-5-wrapper img {
+    width: 100%;
+}
+
+/* APP DESIGN TOOLS */
+
+#app-design-tools-title > span:not(:first-child) {
+    color: #6CFF6C
+}
 /* ---------------------------
 SITE FOOTER
 --------------------------- */
 
  /*  SITE FOOTER */
-    
+
  .footer-outer{
     width: 100%;
     background-image: url('../images/footer\ bg.png');
@@ -1459,6 +1919,20 @@ SITE FOOTER
       .homepage-middle-title{
           font-size: 16em;
       }
+
+      .homepage-first-title{
+          font-size: 13rem;
+      }
+
+      .homepage-third-title{
+          font-size: 13rem;
+      }
+
+      /* webdesign page */
+    
+
+      .seo1-banner-wrapper > div:nth-of-type(1) > h1 > span:nth-of-type(3){
+          font-size: 2.5em;
+      }
+
 }
-
-

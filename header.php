@@ -35,11 +35,12 @@
                 <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
                 <div id="navbarSupportedContent" class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a href="https://www.seosolutions.at/dark/" class="nav-link text-uppercase font-weight-bold hvr-underline-from-left">Home</a></li>
-                        <li class="nav-item"><a href="./logo-design" class="nav-link text-uppercase font-weight-bold hvr-underline-from-left">Logo Design</a></li>
-                        <li class="nav-item"><a href="./web-design" class="nav-link text-uppercase font-weight-bold hvr-underline-from-left">Web Design</a></li>
-                        <li class="nav-item"><a href="./seo" class="nav-link text-uppercase font-weight-bold hvr-underline-from-left">SEO</a></li>
-                        <li class="nav-item"><a href="https://www.seosolutions.at/kontakt" class="nav-link text-uppercase font-weight-bold hvr-underline-from-left">Contact</a></li>
+                        <li class="nav-item active"><a href="https://www.seosolutions.at/dark/" class="nav-link text-uppercase font-weight-bold">Home</a></li>
+                        <li class="nav-item"><a href="./logo-design" class="nav-link text-uppercase font-weight-bold ">Logo Design</a></li>
+                        <li class="nav-item"><a href="./web-design" class="nav-link text-uppercase font-weight-bold ">Web Design</a></li>
+                        <li class="nav-item"><a href="./app-design" class="nav-link text-uppercase font-weight-bold ">App-Entwicklung</a></li>
+                        <li class="nav-item"><a href="./seo" class="nav-link text-uppercase font-weight-bold">SEO</a></li>
+                        <li class="nav-item"><a href="https://www.seosolutions.at/kontakt" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
                     </ul>
                 </div>
             </div>

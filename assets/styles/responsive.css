@@ -8,9 +8,9 @@
     font-weight: 400;
     src: local('Heaters'), url('https://fonts.cdnfonts.com/s/37936/Heaters.woff') format('woff');
 }
- 
+
 @media only screen and (max-width: 950PX){
- 
+
     button{
         color: black;
     }
@@ -30,7 +30,7 @@
          text-align: center;
          padding:25px
       }
-  
+
       .homepage-mobile-hero-image-wrapper > img {
           max-width: 100%;
       }
@@ -53,9 +53,19 @@
     /* HERO SECTION */
     .homepage-hero-wrapper{
         display: none;
-    }  
+    }
+
+    /* sidebar */
+/* SIDEBAR */
+
+.design-icon{
+    font-size: 29px;
+}
 
 
+.section-spacer{
+ height: 120px;
+}
     /* SHOW CASE or CTA SECTION */
     .homepage-showcase-wrapper {
         margin-top: -15px;
@@ -73,12 +83,12 @@
     .homepage-showcase-title-wrapper > h1:nth-of-type(1){
         font-size: 2rem;
     }
-    
+
     .homepage-showcase-title-wrapper > h2:nth-of-type(1){
         -webkit-text-stroke-width: 2px;
         font-size: 2.5rem;
     }
-    
+
 
     /* HOMEPAGE SEO SECTION */
 
@@ -96,21 +106,21 @@
     .homepage-seo-wrapper{
         grid-template-columns:auto;
     }
-    
+
     .homepage-seo-content-wrapper {
         padding: 25px;
     }
-        
-  
-       
+
+
+
     .homepage-seo-content-wrapper > h2:nth-of-type(1){
         font-size: 35px;
     }
-    
+
     .homepage-seo-content-wrapper > h2:nth-of-type(2){
         font-size: 2.5rem;
     }
-    
+
 
     .homepage-seo-content-wrapper > p:nth-of-type(1){
         font-family: 'Barlow';
@@ -121,12 +131,12 @@
     .homepage-seo-image-wrapper{
         position: relative;
          }
-      
-    
+
+
      .homepage-seo-image-wrapper > img:nth-of-type(2){
       display: none;
       }
-      
+
       .homepage-seo-image-wrapper > img:nth-of-type(1){
         display: none;
         }
@@ -135,13 +145,13 @@
       .homepage-design-wrapper{
         grid-template-columns: auto;
         padding-top: 45px;
-        grid-template-areas: 
+        grid-template-areas:
             "img"
             "text";
       }
 
       .homepage-design-image-wrapper {
-          padding: 45px 25px 0 25px;
+          padding: 35px;
           grid-area: img;
           text-align: center;
           margin: auto;
@@ -154,12 +164,12 @@
       .homepage-design-image-wrapper > img:nth-of-type(2){
         display: none;
        }
-   
+
     .homepage-design-content-wrapper{
         padding: 25px;
         grid-area: text;
      }
-    
+
      .design-learn-more-btn{
         width: 180px;
         height: 80px;
@@ -173,18 +183,18 @@
         font-family: 'syne', sans-serif;
         font-size: 32px;
     }
-    
+
     .homepage-design-content-wrapper > h2:nth-of-type(2){
         font-size: 35px;
     }
-    
+
     .homepage-design-content-wrapper > p:nth-of-type(1){
         font-family: 'Barlow';
         max-width: 100%;
     }
 
 
-      /* HOMEPAGE SECTION 3 
+      /* HOMEPAGE SECTION 3
     ----------------------*/
     .homepage-sec3-wrapper{
         grid-template-columns:auto;
@@ -201,7 +211,7 @@
     .homepage-sec3-content-wrapper{
         padding: 25px;
     }
-    
+
     .sec3-learn-more-btn {
         font-weight: 500;
         margin-top: 35px;
@@ -214,15 +224,15 @@
         font-size: 45px;
     }
 
-    
+
     .homepage-sec3-content-wrapper > p:nth-of-type(1){
         max-width: 100%;
     }
-    
+
       .homepage-sec3-image-wrapper {
         padding-top: 45px;
     }
-    
+
      .homepage-sec3-image-wrapper > img:nth-of-type(1){
         display: none;
        }
@@ -235,25 +245,25 @@
     ------------------------ */
     .homepage-sec4-wrapper{
         grid-template-columns: auto;
-        grid-template-areas: 
+        grid-template-areas:
         "img"
         "text";
         padding-bottom: 50px;
         padding-top: 25px;
     }
-    
+
     .homepage-sec4-content-wrapper{
         padding: 25px;
         grid-area: text;
     }
-     
+
     .homepage-sec4-image-wrapper {
         grid-area: img;
     }
     .homepage-sec4-content-wrapper hr {
         margin: auto;
     }
-    
+
     .homepage-sec4-content-wrapper > h2:nth-child(2) {
         font-size: 3rem;
     }
@@ -263,7 +273,7 @@
        .homepage-sec4-image-wrapper > img:nth-of-type(2){
         display: none;
     }
-     
+
     .sec4-learn-more-btn {
         margin-top: 35px;
     }
@@ -274,7 +284,7 @@
         width: 100%;
         padding: 25px;
     }
-    
+
     .testimo-inner-wrapper{
         max-width: 100%;
         padding: 0px;
@@ -307,7 +317,7 @@
         position: relative;
         max-height: auto;
     }
-    
+
     .contact-section-outer-wrapper > img {
         position: absolute;
         top: 0;
@@ -321,7 +331,7 @@
         display: grid;
         grid-template-columns: 1fr;
     }
-   
+
     .form-wrapper {
         z-index: inherit;
     }
@@ -348,28 +358,28 @@
         padding: 25px;
         margin-bottom: -55px;
     }
-    
-    
+
+
     .service-sectoion-title  {
         color: #6CFF6C;
         font-family: 'Syne', sans-serif;
         font-size: 2em;
     }
-    
+
     .service-sectoion-list-wrapper > ul {
         list-style: none;
     }
-    
+
     .service-sectoion-list-wrapper > ul > li{
         padding-top: 15px;
     }
-    
+
     .service-sectoion-list-wrapper > ul > li > a {
         color: #fff;
         font-family: 'Barlow', sans-serif;
         font-size: 2em;
     }
-    
+
     .service-sectoion-list-wrapper > ul > li > a:hover {
         text-decoration: none;
     }
@@ -392,7 +402,7 @@
         padding: 25px;
         margin: 0;
     }
-    
+
     .hompage-moon-img-for-desktop{
         display: none;
     }
@@ -401,9 +411,9 @@
         margin-top: 50px;
         font-family: 'Barlow', sans-serif;
         font-weight: 600;
-        font-size: 4em;   
+        font-size: 4em;
     }
-    
+
     .homepage-about-section-wrapper  h2 {
         margin-top: -55px;
         font-size: 30px;
@@ -412,59 +422,68 @@
     .homepage-about-section-wrapper h4 a{
         color: #fff;
         font-family: 'Barlow', sans-serif;
-        font-size: 1.5em;   
+        font-size: 1.5em;
     }
 
      /* SEO PAGE STYLE
     ------------------------------ */
-    .seo-banner-wrapper-outer{
-        width: 100%;
-        height: auto;
-        flex-direction: column-reverse;
-    }
-    
-    .seo-banner-wrapper-inner{
-      display: flex;
-      flex-direction: column;
-    }
-    .seo-banner-img{
-     position: static;
-     width: 100%;
-    }
-  
-    
-    .seo-banner-content-wrapper > h4:nth-child(1) {
-        margin-top: 35px;
-        line-height: 0.6;
-    }
-    .seo-banner-content-wrapper > h5{
-        font-family: 'Syne', sans-serif;
-        text-transform: uppercase;
-        font-size: 3.5rem;
-        padding-left: 25px;
-        width: 90%;
-        left: 0;
-    }
-    
-    .seo-banner-content-wrapper > p {
-        max-width: 90%;
-        margin-top: 125px;
+    /* SEO BANNER */
+
+    .seo-page-banner-container {
+     background-image: url('../images/seo page banner image.png');
+     background-position: right;
+     background-size: cover;
     }
 
+   .seo-inner-wrapper {
+     max-width: 85%;
+     height: 75vh;
+     margin: auto;
+     display: grid;
+     grid-template-columns: 1fr;
+     align-content: center;
+     padding-top: 35px;
+   }
+
+   .seo-page-banner-inner > h1 {
+     display: flex;
+     flex-direction: column;
+     font-family: 'Syne', sans-serif;
+     text-transform: uppercase;
+   }
+
+   .seo-page-banner-inner > h1 > span:nth-child(1) {
+     font-size: 45px;
+     color: white;
+   }
+   .seo-page-banner-inner > h1 > span:nth-child(2) {
+     font-size: 55px;
+     color: #fff;
+     font-weight: 900;
+   }
+   .seo-page-banner-inner > h1 > span:nth-child(3) {
+     font-size: 55px;
+     font-weight: 900;
+   }
+
+   .seo-page-banner-inner > p {
+     max-width: auto;
+   }
+
      /* SEO PAGE SECTION 2 */
-    
+
      .seo-page-section-2-wrapper{
         max-width: 100%;
         padding: 25px;
         grid-template-columns: 1fr;
-        margin: 65px auto;
+        margin: 0px auto;
         grid-gap: 75px;
     }
-   
+
     .seo-page-sec2-content-wrapper{
         padding: 25px;
     }
-    
+
     .seo-page-sec2-content-wrapper > p {
         max-width: 100%;
     }
@@ -472,17 +491,20 @@
 
       /*  SEO PAGE SECTION 3 OR CTA SECTION STYLE
     -------------------------------------------- */
-    
+
     .seo-page-sec3-wrapper{
       display: flex;
-      flex-direction: column;
-      padding-bottom: 65px;
+      flex-direction:column;
+      padding: 0px;
       margin-top: 2px;
     }
- 
+
+    .seo-page-sec3-img-wrapper {
+        text-align: center;
+    }
 
     .seo-page-sec3-img-wrapper > img{
-        width: 100%;
+        max-width: 115%;
     }
     .seo-num-field-mob{
       height: 65px
@@ -501,47 +523,83 @@
         font-size: 18px;
         font-weight: bold;
         font-family: 'Barlow' sans-serif;
-        margin-top: ;
+    
     }
     .sec3-form{
         display: grid;
         grid-template-columns: 3fr 1fr;
         height: 65px;
-        width: 95%;  
+        width: 100%;
       }
-      
+
       .seo-page-sec3-content-wrapper > h3 {
         font-size: 2.5rem;
+
         }
 
-          /*      SEO PAGE SECTION 4 
+        /* Icon box section */
+
+        .icon-box-wrapper > div {
+            grid-template-columns: 1fr;
+           }
+
+           .icon-box {
+            height: auto;
+            padding-top: 25px;
+          }
+
+
+          /*      SEO PAGE SECTION 4
     OTHER STYLES COPIED FROM SECTION 2
     ------------------------------------*/
     .seo-page-sec4-wrapper{
-        display: flex;
-        flex-direction: column-reverse;
+        grid-template-columns: 1fr;
+        grid-column-gap: 25px;
+        margin: 55px auto;
     }
     .seo-page-sec4-content-wrapper > h4 {
         font-size: 1.5em;
     }
-    
+
     .seo-page-sec4-content-wrapper > h2 {
         display: block;
         font-size: 2.5em;
     }
-    
+
     .seo-page-sec4-content-wrapper > p {
         max-width: 100%;
     }
-    
+
     .seo-page-sec4-img-wrapper{
         max-width: 100%;
     }
 
-    .seo-page-sec4-img-wrapper > {
+    .seo-page-sec4-img-wrapper > img {
+        padding-top: 55px;
         width: 100%;
     }
 
+    /* Web design tools sectiion */
+
+    .web-design-page-tools-container > div{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .webdesign-page-tools-image-container > img {
+        width: 85%;
+    }
+    
+    .webdesign-page-tools-content-container > p {
+        max-width: 100%;
+    }
+    
+    .webdesign-page-tools-content-container > h2 {
+        font-size: 22px;
+    }
+    .showcase-form-webdesign {
+        width: 100%;
+    }
     /* Process section SEO page */
     .process-grid-inner-img {
         display: none;
@@ -566,7 +624,7 @@
     .process-title-wrapper > h2 {
         font-size: 3.5rem;
     }
-    
+
     .process-title-wrapper > h3 {
         font-size: 6rem;
     }
@@ -582,8 +640,8 @@ SEO PAGE SECTION 4 OR TOOLS SECTION
 .seo-tools-content-wrapper > h2 {
     font-size: 3rem;
 }
-    
-    /*---------------- 
+
+    /*----------------
      WEB DESIGN PAGE
     ---------------- */
 
@@ -598,7 +656,7 @@ SEO PAGE SECTION 4 OR TOOLS SECTION
     .seo1-banner-wrapper > div:nth-of-type(2) > img{
         width: 100%;
     }
-  
+
     /* seo1 banner content title style */
     .seo1-banner-wrapper > div:nth-of-type(1) > h1{
         font-size: 1.5rem;
@@ -606,11 +664,11 @@ SEO PAGE SECTION 4 OR TOOLS SECTION
 
     .seo1-banner-wrapper > div:nth-of-type(1) > h1 > span:nth-of-type(3){
        font-size: 3em;
-       position:static;   
-       margin-bottom: 0px; 
+       position:static;
+       margin-bottom: 0px;
        margin-left: -45px;
        padding-bottom: 15px;
-       width: 90%;  
+       width: 90%;
        padding-left: 45px;
     }
 
@@ -619,6 +677,46 @@ SEO PAGE SECTION 4 OR TOOLS SECTION
         margin-top: 45px;
      }
 
+     /*  promotion-container */
+    .promotion-container {
+        max-width: 100%;
+        padding: 35px;
+        text-align: left;
+    }
+
+    .white-line {
+        height: 17px;
+        width: 70%;
+        background-color: #fff;
+        position: absolute;
+        bottom: -7px;
+        left: 5%;
+        right: 5%;
+    }
+    .promotion-container > div {
+        max-width: 100%;
+    }
+
+    .promotion-container h3 {
+        display: flex;
+        flex-direction: column;
+    }
+    .promotion-container h3 > span:nth-child(1){
+        font-size: 18px;
+        font-family: 'Syne', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .promotion-container h3 > span:nth-child(2){
+        font-size: 25px;
+        font-family: 'Syne', sans-serif;
+        text-transform: uppercase;
+    }
+    .promotion-container p {
+        font-family: 'Barlow', sans-serif;
+        max-width: 100%;
+        margin: auto;
+    }
      /* SEO 1 SECTOIN 2 */
 
 .seo1-section2-wrapper {
@@ -675,6 +773,100 @@ SEO PAGE SECTION 4 OR TOOLS SECTION
       grid-template-columns: 3fr 1fr;
       height: 62px;
     }
+
+
+    /* App Development page */
+
+    .app-dev-banner-wrapper {
+        background: #000 url('../images/appdev.jpg');
+        height: 65vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 160px;
+    }
+
+    .app-dev-banner-wrapper > h1 {
+        font-size: 15vw;
+    }
+
+    .app-dev-banner-wrapper > h1 > span:nth-child(1) {
+        color: #fff;
+        font-size: 26px;
+    }
+    .app-dev-banner-wrapper > h1 > span:nth-child(3) {
+        font-size: 7vw;
+    }
+
+
+    .promotion-container-appdesign {
+        max-width: 100%;
+    }
+
+    /* app dev section 3 */
+
+    .appdev-section3-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .appdev-section2-content-wrapper {
+        padding: 25px;
+    }
+    .appdev-section2-content-wrapper > p {
+        max-width: 100%;
+    }
+
+    .appdev-section2-content-wrapper > h2 > span:nth-child(1) {
+     font-size: 5vw;
+    }
+ 
+      .app-design-section-5-wrapper {
+      max-width: 85%;
+      margin: 120px auto ;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      justify-items: center;
+      grid-gap: 45px;
+  }
+
+  .app-design-section-5-wrapper p {
+      max-width: 550px;
+  }
+  
+  .app-dev-section-5-title {
+      display: flex;
+      flex-direction: column;
+      text-transform: uppercase;
+      font-family: 'syne', sans-serif;
+  }
+
+  .app-dev-section-5-title > span:not(:first-child) {
+    color: #6CFF6C;
+    font-size: 3vw;
+    font-weight: 900;
+}
+
+.app-design-section-5-wrapper img {
+    width: 100%;
+}
+
+/* APP DESIGN SECTION 5 */
+.app-design-section-5-wrapper {
+    grid-template-columns: 1fr;
+}
+
+.app-design-section-5-wrapper p {
+    max-width: 100%;
+}
+
+.app-dev-section-5-title > span:not(:first-child) {
+  font-size: 6vw;
+}
+
     /* FOOTER FOR SMALL SCREEN MOBILE */
     .footer-title-wrapper{
      padding: 55px 25PX 0px 25px;
@@ -683,13 +875,12 @@ SEO PAGE SECTION 4 OR TOOLS SECTION
         font-size: 25px;
     }
 
-    
+
     .footer-link-wrapper > div {
         grid-template-columns: 1fr 1fr;
         grid-gap: 35px;
         justify-items: center;
         padding-top: 45px;
     }
-    
-}
 
+}

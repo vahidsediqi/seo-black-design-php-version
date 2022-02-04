@@ -9,4 +9,10 @@
     });
 });
 
-// mouse hour
+
+// SIDEBAR
+const sidebarBtn = document.querySelector('.sidebarBtn');
+const sideBarWrapper = document.querySelector('.sidebar');
+sidebarBtn.addEventListener('click', () => {
+  sideBarWrapper.classList.toggle('moveRight')
+})
